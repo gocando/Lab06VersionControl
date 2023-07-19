@@ -1,0 +1,41 @@
+def encode(password):
+    password_encode = []
+    for i in password:
+        i = int(i) + 3
+        password_encode.append(i)
+    pass_string =''.join(str(num) for num in password_encode)
+    return pass_string
+
+password = None
+while True:
+    print("Menu")
+    print("-------------")
+    print("1. Encode")
+    print("2. Decode")
+    print("3. Quit")
+    print()
+
+    option = int(input("Please enter an option:"))
+
+    if option == 1:
+        password = input("Please enter your password to encode:")
+        print("Your password has been encoded and stored!")
+        print()
+
+
+    elif option ==2:
+        if password == None:
+            print("No password has been encoded.")
+        else:
+            decode = encode(password)
+            print(f"The encoded password is {decode}, and the original password is {password}")
+        print()
+
+
+    elif option == 3:
+        break
+
+
+    else:
+        print("Invalid option. Please choose a option from the menu: ")
+
