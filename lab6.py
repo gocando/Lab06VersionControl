@@ -1,4 +1,4 @@
-def encode(password):
+def decode(password):
     password_encode = []
     for i in password:
         i = int(i) + 3
@@ -28,8 +28,8 @@ def main():
             if password == None:
                 print("No password has been encoded.")
             else:
-                decode = encode(password)
-                print(f"The encoded password is {decode}, and the original password is {password}")
+                decode1 = decode(password)
+                print(f"The encoded password is {decode1}, and the original password is {password}")
             print()
 
 
