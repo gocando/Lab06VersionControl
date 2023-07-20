@@ -1,10 +1,4 @@
-def decode(password):
-    password_encode = []
-    for i in password:
-        i = int(i) + 3
-        password_encode.append(i)
-    pass_string =''.join(str(num) for num in password_encode)
-    return pass_string
+
 
 def main():
     password = None
