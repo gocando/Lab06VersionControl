@@ -1,4 +1,10 @@
-
+#decode function made by Justin Marl Capili
+def decode(password):
+	encodedpassword = ""
+	for i in password:
+		newnum = ((int(i) + 3) % 10)
+		encodedpassword += str(newnum)
+	return encodedpassword
 
 def main():
     password = None
